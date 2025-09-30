@@ -1,5 +1,5 @@
 {
-  "id": "5e880e16-b4ec-4955-bc4d-038c5f3835cd",
+  "id": "7076ca73-64a1-489a-bfe6-9eab04e5b662",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -682,8 +682,27 @@
           "primaryKey": false,
           "notNull": false
         },
-        "remember_token": {
-          "name": "remember_token",
+        "role": {
+          "name": "role",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'CUSTOMER'"
+        },
+        "verify_token": {
+          "name": "verify_token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reset_token": {
+          "name": "reset_token",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "refresh_token": {
+          "name": "refresh_token",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": false
